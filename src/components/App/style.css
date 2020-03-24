@@ -1,0 +1,137 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input {
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.todo {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.task-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: row;
+    flex-flow: column nowrap;
+    width: 350px;
+    margin-right: 10px;
+    border: 2px solid #c5c5c5;
+    border-radius: 6px;
+    position: relative;
+}
+
+.task-input label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 0 10px;
+    color: #cccccc;
+}
+
+.task-input input {
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+}
+
+.task-button {
+    flex-grow: 1;
+    color: #7ecd00;
+    border: 2px solid #7ecd00;
+    border-radius: 6px;
+    padding: 14px 40px;
+    background-color: transparent;
+}
+
+.task-button:hover,
+.task-button:focus {
+    color: #ffffff;
+    background-color: #c5c5c5;
+}
+
+.task-button:active {
+    color: #ffffff;
+    background-color: #7ecd00;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.checked {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../img/checkbox-on.svg);
+    width: 24px;
+    height: 24px;
+}   
+
+.unchecked {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../img/checkbox-off.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.deleted {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-image: url(../../img/deleted.svg);
+    width: 15px;
+    height: 15px;
+}
+
+.btn {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
+
+.task-text {
+    width: 400px;
+    padding-left: 15px;
+}
+
+.task-edit {
+    box-sizing: border-box;
+    border: none;
+    width: 400px;
+    padding-left: 15px;
+    border-bottom: 2px solid #3030d1;
+}
